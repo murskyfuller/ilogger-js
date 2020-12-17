@@ -5,6 +5,7 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
+        "test": "mocha -r ts-node/register tests/**/*.test.ts",
         "lint": "yarn eslint **/*.ts --ext .js,.jsx,.ts,.tsx",
         "format": "prettier --config .prettierrc 'src/**/*.ts' --write"
     },
@@ -20,6 +21,7 @@
         "@types/chai": "^4.2.14",
         "@types/mocha": "^8.0.4",
         "@types/node": "^14.14.10",
+        "@types/sinon": "^9.0.9",
         "@typescript-eslint/eslint-plugin": "^4.9.0",
         "@typescript-eslint/parser": "^4.9.0",
         "chai": "^4.2.0",
@@ -28,7 +30,8 @@
         "eslint-plugin-prettier": "^3.1.4",
         "mocha": "^8.2.1",
         "prettier": "^2.2.1",
-        "ts-node": "^9.0.0",
+        "sinon": "^9.2.2",
+        "ts-node": "^9.1.1",
         "typescript": "^4.1.2"
     }
 }
